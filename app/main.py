@@ -30,7 +30,7 @@ def hello():
 
 
 @app.get("/users/taken")
-def read_root(username):
+def check_username(username):
     if username == "tulip2014":
         return {"taken": True}
 
