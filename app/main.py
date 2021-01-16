@@ -43,4 +43,7 @@ def check_username(username):
     if username == "error":
         response.status_code = status.HTTP_500_INTERNAL_SERVER_ERROR
 
+    if username == "invalidJSON":
+        return "this isn't a json :("
+
     return {"taken": False}
